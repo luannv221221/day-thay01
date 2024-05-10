@@ -63,6 +63,7 @@
                     <th>Email</th>
                     <th>Sex</th>
                     <th>Age</th>
+                    <th></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -73,6 +74,9 @@
                         <td>${st.email}</td>
                         <td>${st.sex ? 'Đực' : 'Cái'}</td>
                         <td>${st.age}</td>
+                        <td>
+                            <a href="/detail/${st.studentId}" class="btn btn-success">Chi tiết</a>
+                        </td>
                     </tr>
                 </c:forEach>
 
